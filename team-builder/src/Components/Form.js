@@ -4,18 +4,18 @@ const Form = props => {
     console.log(props);
 
     return (
-        <div className='team-member-form'>
+        <div className='team-member-list'>
             <h1>Team Members</h1>
-                {props.form.map(form =>(
-                    <div className='form' key={form.id}>
-                        <h2>{form.name}</h2>
-                            <p>{form.email}</p>
-                            <p>{form.role}</p>
+                {props.teamMember.map(teamMember =>(
+                    <div className='form' key={teamMember.id}>
+                        <h2>{teamMember.name}</h2>
+                            <p>{teamMember.email}</p>
+                            <p>{teamMember.role}</p>
                     </div>
 
                 ))}
         </div>
-    )
+    );
 };
 
 export default Form;

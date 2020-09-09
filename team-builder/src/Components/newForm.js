@@ -25,14 +25,22 @@ const submitForm = (e) => {
 
 return(
         <form onSubmit={submitForm}>
-            <label htmlFor='name'>Name</label>
+            <label htmlFor='Name'>Name</label>
             <input type='text' name='name' value={form.name} onChange={changeHandeler} />
 
-            <label htmlFor='email'>Email</label>
+            <label htmlFor='Email'>Email</label>
             <input type='text' name='email' value={form.email} onChange={changeHandeler} />
 
-            <label htmlFor='role'>Role</label>
-            <input type='text' name='role' value={form.role} onChange={changeHandeler} />
+            <label htmlFor='Role'>Role</label>
+            <select
+             name='Role' value={form.role} onChange={changeHandeler}>
+               <option value=''>Select from Drop Menu</option>
+               <option value="Student">Student</option>
+               <option value="Team Lead">Team Lead</option>
+               <option value="Instructor">Instructor</option>
+               <option value="Tutor">Tutor</option>
+            </select>
+
 
             <button type='submit'>Add New Team Member</button>
         </form>
