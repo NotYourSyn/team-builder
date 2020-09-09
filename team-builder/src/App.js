@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import Form from './Components/Form';
-import newForm from './Components/newForm';
+import newForm from './Components/NewForm';
 import logo from './logo.svg';
 import './App.css';
 
